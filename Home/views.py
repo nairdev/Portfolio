@@ -33,5 +33,5 @@ def contact(request):
         
         contact_instance = Contact(name = name, email = email, phone = phone, message = message)
         contact_instance.save()
-        print ("The data has been saved into the db")
+        print ("The data (name, email, phone and message) has been saved into the db")
     return render(request, 'contact.html')
